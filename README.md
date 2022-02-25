@@ -38,7 +38,11 @@ Deploy the program:
 anchor deploy --provider.wallet ./id.json --provider.cluster devnet
 ```
 
-Modify file `tests/solana-hi-roller.ts`, replace `const programId = new anchor.web3.PublicKey("Bdj3Nj33HHPViMmGrXKuZ37cUYyuyq6JQC5sYKwMYcZi")` with your ProgramId.
+Modify file `tests/solana-hi-roller.ts`, replace
+```
+const programId = new anchor.web3.PublicKey("Bdj3Nj33HHPViMmGrXKuZ37cUYyuyq6JQC5sYKwMYcZi")
+```
+with your ProgramId derived from the previous step.
 
 Test your deployment with
 ```
@@ -81,5 +85,7 @@ Your transaction signature 5ESSnKmtvGrJNjfMBRBwagY8CE1ca61Q8Xb4T1fJtaijfShQWF69c
 ✨  Done in 7.53s.
 ```
 
-We have our dice number: (from the logs) `'Program log: Dice rolled: 1. This random number was derived from SOL / USD price',
-`
+We have our dice number!
+```
+Program log: Dice rolled: 1. This random number was derived from SOL / USD price
+```
